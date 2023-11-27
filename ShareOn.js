@@ -6,7 +6,7 @@ class ShareOn {
        markup (id) { 
         if (id == -1)
         return Markup.inlineKeyboard([
-            Markup.button.callback('Do you wanna see some magic?', 'next')
+            Markup.button.callback('Pick a Question', 'next')
             ])
         else
         return Markup.inlineKeyboard([
@@ -18,7 +18,7 @@ class ShareOn {
     constructor(bot){
         this.bot = bot
        
-        this.bot.start((ctx) => ctx.reply('Welcome to ShareOn!',this.markup(0)))
+        this.bot.start((ctx) => ctx.reply('Do you wanna see some magic?',this.markup(0)))
   
         this.bot.command(['shareon','sharoniscaring','question','start','next'],(ctx) => this.pickQuestion(ctx))      
         bot.action('next', (ctx) =>this.pickQuestion(ctx))
