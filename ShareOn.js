@@ -6,7 +6,7 @@ class ShareOn {
        markup (id) { 
         if (id == -1)
         return Markup.inlineKeyboard([
-            Markup.button.callback('Pick a Question', 'next')
+            Markup.button.callback('Do you wanna see some magic?', 'next')
             ])
         else
         return Markup.inlineKeyboard([
