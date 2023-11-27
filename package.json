@@ -1,0 +1,16 @@
+{
+  "name": "shareon",
+  "version": "1.0.0",
+  "description": "Do you want to see some magic?",
+  "main": "ShareOn.js",
+  "scripts": {
+    "start": "node ShareOn.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Roberto Valenti",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.15.0"
+  }
+}
